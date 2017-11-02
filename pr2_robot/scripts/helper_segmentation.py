@@ -5,7 +5,7 @@ from sensor_stick.pcl_helper import *
 save_file = False
 
 # Voxel Grid filter.
-def make_voxel(cloud, leaf_size = 0.01):
+def make_voxel(cloud, leaf_size = 0.005):
 	vox = cloud.make_voxel_grid_filter()
 	vox.set_leaf_size(leaf_size, leaf_size, leaf_size)
 	
