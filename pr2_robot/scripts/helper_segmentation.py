@@ -46,7 +46,7 @@ def extract_inliers(cloud, inliers, negative = False):
 # Extract outliers
 def std_filter_outlier(cloud):
 	outlier_filter = cloud.make_statistical_outlier_filter()
-	outlier_filter.set_mean_k(50)
+	outlier_filter.set_mean_k(10)
 	x = 0.01
 	outlier_filter.set_std_dev_mul_thresh(x)
 	cloud_filtered = outlier_filter.filter()
