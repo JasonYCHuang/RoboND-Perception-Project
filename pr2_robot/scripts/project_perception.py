@@ -24,7 +24,7 @@ from helper_clustering import *
 from helper_recognition import *
 from helper_pp_service_content import *
 
-TEST_SCENE_NUM = 2
+TEST_SCENE_NUM = 1
 MOVE_ROBOT = False
 
 # Helper function to get surface normals
@@ -91,6 +91,7 @@ def pr2_mover(object_list):
     # TODO: Loop through the pick list
     yaml_dict_list = []
     for i in range(0, len(object_list_param)):
+
         test_scene_num, arm_name, object_name, pick_pose, place_pose = gen_pp_service_content(
             i, 
             object_list_param, 
