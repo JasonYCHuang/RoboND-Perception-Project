@@ -1,0 +1,5 @@
+Features in Training Set: 60
+Invalid Features in Training set: 0
+Scores: [ 0.91666667  0.91666667  1.          1.          1.        ]
+Accuracy: 0.97 (+/- 0.08)
+accuracy score: 0.966666666667
